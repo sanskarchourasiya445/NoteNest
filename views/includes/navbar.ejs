@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm border-bottom mb-3 sticky-top">
+  <div class="container-fluid">
+
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center fw-bold text-primary" href="/Notes">
+      <i class="fa-solid fa-note-sticky me-2"></i>NoteNest
+    </a>
+
+    <!-- Hamburger Menu -->
+    <button class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto align-items-center" style="font-size: 0.95rem;">
+        <a class="nav-link text-dark" href="/Notes"><button class="btn btn-primary">Home</button></a>
+        <% if(currUser){ %>  
+        <a class="nav-link px-3 ms-2" href="/Notes/new" ><i class="fa-solid fa-plus"></i>Add Note</a>
+        <a class="nav-link px-3 " href="/logout"  >Logout</a>
+      <% } %>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+

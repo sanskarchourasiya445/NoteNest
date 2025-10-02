@@ -1,0 +1,60 @@
+<% layout('layouts/boilerplate') %>
+<body class="bg-light">
+
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-5">
+
+        <div class="card shadow-sm rounded-3 p-4">
+          <h2 class="text-center mb-4">Create New Note</h2>
+
+          <form method="POST" action="/Notes" class="needs-validation"novalidate>
+
+            <!-- Title -->
+            <div class="mb-3">
+              <label for="title" class="form-label fw-bold">Title</label>
+              <input 
+                id="title" 
+                name="Note[title]" 
+                type="text" 
+                class="form-control"
+                placeholder="Enter note title"
+                required
+              >
+              <div class="invalid-feedback">
+                title is required
+              </div>
+            </div>
+
+            <!-- Description -->
+            <div class="mb-3">
+              <label for="description" class="form-label fw-bold">Description</label>
+              <textarea 
+                id="description" 
+                name="Note[description]" 
+                rows="6" 
+                class="form-control"
+                placeholder="Enter note description"
+                required
+              ></textarea>
+              <div class="invalid-feedback">
+                description is required
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="d-flex justify-content-between">
+              <a href="/Notes" class="btn btn-outline-secondary">Cancel</a>
+              <button type="submit" class="btn btn-primary">Add Note</button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="/JS/script.js"></script>
+</body>
+
+

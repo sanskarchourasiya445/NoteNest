@@ -1,0 +1,48 @@
+<% layout('layouts/boilerplate') %>
+<body class="bg-light">
+
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-5">
+
+        <!-- Note Card -->
+        <div class="card shadow-sm rounded-3 p-4">
+          <h2 class="text-center mb-4 " style="text-decoration: underline;"><%= Note.title %></h2>
+          <p class="mb-4 text-muted"><%= Note.description %></p>
+
+          <!-- Footer with date and actions -->
+          <div class="d-flex justify-content-between align-items-center">
+            <small class="text-secondary">
+              Last updated: <%= Note.updatedAt ? Note.updatedAt.toDateString() : Note.createdAt.toDateString() %>
+            </small>
+
+            <div class="d-flex gap-2">
+              <a href="/Notes/<%= Note._id %>/edit" class="btn btn-sm btn-outline-secondary">
+                <i class="fa-solid fa-pencil"></i> Edit
+              </a>
+              <form method="POST" action="/Notes/<%= Note._id %>?_method=DELETE" class="d-inline">
+                <button type="submit" class="btn btn-sm btn-outline-danger">
+                  <i class="fa-solid fa-trash"></i> Delete
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back Button -->
+        <div class="text-center mt-3">
+          <a href="/Notes" class="btn btn-outline-secondary">← Back to All Notes</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+
+
+
+
+
+

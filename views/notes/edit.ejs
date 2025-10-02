@@ -1,0 +1,55 @@
+<% layout('layouts/boilerplate') %>
+<body class="bg-light">
+
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-5"> <!-- narrower width -->
+
+        <div class="card shadow-sm rounded-3 p-4">
+          <h2 class="text-center mb-4">Edit Note</h2>
+
+          <form method="POST" action="/Notes/<%= Note._id %>?_method=PUT">
+
+            <!-- Title -->
+            <div class="mb-3">
+              <label for="title" class="form-label fw-bold">Title</label>
+              <input 
+                id="title" 
+                name="Note[title]" 
+                value="<%= Note.title %>" 
+                type="text" 
+                class="form-control"
+                placeholder="Enter note title"
+                required
+              >
+            </div>
+
+            <!-- Description -->
+            <div class="mb-3">
+              <label for="description" class="form-label fw-bold">Description</label>
+              <textarea 
+                id="description" 
+                name="Note[description]" 
+                rows="6" 
+                class="form-control"
+                placeholder="Enter note description"
+                required
+              ><%= Note.description %></textarea>
+            </div>
+
+            <!-- Buttons -->
+            <div class="d-flex justify-content-between">
+              <a href="/Notes" class="btn btn-outline-secondary">Cancel</a>
+              <button type="submit" class="btn btn-primary">Save Changes</button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+
