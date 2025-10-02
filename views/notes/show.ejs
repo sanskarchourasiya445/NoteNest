@@ -12,9 +12,6 @@
 
           <!-- Footer with date and actions -->
           <div class="d-flex justify-content-between align-items-center">
-            <small class="text-secondary">
-              Last updated: <%= Note.updatedAt ? Note.updatedAt.toDateString() : Note.createdAt.toDateString() %>
-            </small>
 
             <div class="d-flex gap-2">
               <a href="/Notes/<%= Note._id %>/edit" class="btn btn-sm btn-outline-secondary">
