@@ -36,7 +36,7 @@ Frontend: EJS + CSS
 
 🚀 Live Demo
 
-🌐 Try it out here: NoteNest on Render
+🌐 Try it out here: [NoteNest on Render](https://notenest-16xh.onrender.com)
 
 🎨 Designing simple UIs using EJS templates and CSS
 
