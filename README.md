@@ -12,8 +12,6 @@ NoteNest is a clean and simple notes app that helps users manage their ideas eff
 
 💬 Flash Messages – Get instant feedback on your actions
 
-📱 Responsive Design – Works beautifully on desktop & mobile
-
 🎨 Clean UI – Built with EJS templates & custom CSS
 
 🔧 Tech Stack
