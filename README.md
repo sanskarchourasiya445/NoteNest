@@ -2,7 +2,7 @@
 
 🎉 My first full-stack project to learn and practice web development!
 
-NoteNest is a clean and simple notes app that helps users manage their ideas efficiently.
+NoteNest is a clean and simple notes app that helps users manage their ideas efficiently. It is fully responsive on both desktop and mobile, allowing users to view and manage their own notes securely.
 
 🔹 Features
 
@@ -34,10 +34,12 @@ Frontend: EJS + CSS
 
 ⚠️ Handling errors & enhancing user experience
 
+🎨 Designing responsive UIs for desktop and mobile using EJS templates and CSS
+
 🚀 Live Demo
-
-🌐 Try it out here: [NoteNest on Render](https://notenest-16xh.onrender.com)
-
-🎨 Designing simple UIs using EJS templates and CSS
+🌐 Try it out here: [NoteNest on Render](https://notenest-hios.onrender.com)
 
 🤝 Connect with Me
+
+
+
